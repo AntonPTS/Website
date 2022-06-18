@@ -368,9 +368,6 @@ h2{
     .slc__flexs2{
         height: 25px;
     }
-    .redbook__class{
-        margin: auto 10px;
-    }
 }
 @media screen and (max-width: 500px) {
     .redbook__class img {
