@@ -83,7 +83,7 @@ b{
 }
 
 .margintop{
-    margin-top: 35px;
+    margin-top: 75px;
     text-align: center;
 }
 
@@ -95,7 +95,7 @@ b{
 .contacts{
     font-size: 24px;
     text-align: center;
-    margin: 80px auto 20px;
+    margin: 100px auto 50px;
 }
 
 .container nav a {

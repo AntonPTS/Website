@@ -68,7 +68,7 @@ header {
 }
 
 form{
-    margin-top: 80px;
+    margin-top: 85px;
 }
 
 .form{
@@ -94,6 +94,10 @@ form{
     background-color: white;
 }
 
+table{
+    margin-top: 30px;
+}
+
 td{
     padding: 5px 10px;
 }
@@ -104,6 +108,7 @@ h4{
     font-style: italic;
     text-align: center;
     font-weight: bold;
+    font-size: 24px;
 }
 
 .place{

@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Черный аист</title>
+    <script>
+        var t;
+        function up() {
+	        var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
+	        if(top > 0) {
+		        window.scrollBy(0,-100);
+		        t = setTimeout('up()',20);
+	        } else clearTimeout(t);
+	        return false;
+        }
+      </script>
 </head>
 <body background="../images/BG.png">
     <header class="header">
@@ -18,7 +29,7 @@
             </div>
         </div>
     </header>
-    <a href="#">
+    <a href="#" id="up" onclick="return up()">
     <div class="pointer">
         <img src="../images/arrow.svg">
     </div></a>

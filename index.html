@@ -4,6 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="css/slider.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          var slider = new ItcSimpleSlider('.itcss', {
+            loop: true,
+            autoplay: true,
+            swipe: true
+          });
+        });
+      </script>
+      <script>
+        var t;
+        function up() {
+	        var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
+	        if(top > 0) {
+		        window.scrollBy(0,-100);
+		        t = setTimeout('up()',20);
+	        } else clearTimeout(t);
+	        return false;
+        }
+      </script>
     <title>Главная</title>
 </head>
 <body background="images/BG.png">
@@ -18,14 +39,56 @@
             </div>
         </div>
     </header>
-    <a href="#">
+    <a href="#" id="up" onclick="return up()">
     <div class="pointer">
         <img src="images/arrow.svg">
     </div></a>
-
-
     <div class="redbook">
         <div class="container">
+            <div class="itcss">
+                <div class="itcss__wrapper">
+                  <div class="itcss__items">
+                    <div class="itcss__item" style="background-image: url(images/sizovoronka.jpg); background-size: 100% 100%;">
+                        <a href="details/sizovoronka.html"><div style="width: 100%; height: 100%"></div></a> 
+                    </div>
+                    <div class="itcss__item" style="background-image: url(images/ussurijskij-kogtistyj-triton-onychodactylus-fischeri-1.jpeg); background-size: 100% 100%;">
+                        <a href="details/triton.html"><div style="width: 100%; height: 100%"></div></a> 
+                    </div>
+                    <div class="itcss__item" style="background-image: url(images/tonkohvostyj-poloz-elaphe-taeniura.jpg); background-size: 100% 100%;">
+                        <a href="details/poloz.html"><div style="width: 100%; height: 100%"></div></a>    
+                    </div>
+                    <div class="itcss__item" style="background-image: url(images/snejniy-baran.jpg); background-size: 100% 100%;">
+                        <a href="details/snejniy-baran.html"><div style="width: 100%; height: 100%"></div></a> 
+                    </div>
+                    <div class="itcss__item" style="background-image: url(images/hyaena.jpg); background-size: 100% 100%;">
+                        <a href="details/hyaena.html"><div style="width: 100%; height: 100%"></div></a> 
+                    </div>
+                    <div class="itcss__item" style="background-image: url(images/suslik.jpg); background-size: 100% 100%;">
+                        <a href="details/suslik.html"><div style="width: 100%; height: 100%"></div></a> 
+                    </div>
+                    <div class="itcss__item" style="background-image: url(images/shmel-otshelnik-bombus-anachoreta-1.jpeg); background-size: 100% 100%;">
+                        <a href="details/shmel.html"><div style="width: 100%; height: 100%"></div></a> 
+                    </div>
+                    <div class="itcss__item" style="background-image: url(images/aist.jpg); background-size: 100% 100%;">
+                        <a href="details/aist.html"><div style="width: 100%; height: 100%"></div></a> 
+                    </div>
+                    <div class="itcss__item" style="background-image: url(images/baklan.jpg); background-size: 100% 100%;">
+                        <a href="details/baklan.html"><div style="width: 100%; height: 100%"></div></a> 
+                    </div>
+                    <div class="itcss__item" style="background-image: url(images/trehczvetnaya-nochnicza-myotis-emarginatus.jpeg); background-size: 100% 100%;">
+                        <a href="details/nochnica.html"><div style="width: 100%; height: 100%"></div></a> 
+                    </div>
+                    <div class="itcss__item" style="background-image: url(images/sterlyad.jpg); background-size: 100% 100%;">
+                        <a href="details/sterlyad.html"><div style="width: 100%; height: 100%"></div></a> 
+                    </div>
+                    <div class="itcss__item" style="background-image: url(images/sirijskaya-chesnochnicza-pelobates-syriacus-1.jpeg); background-size: 100% 100%;">
+                        <a href="details/chesnochnica.html"><div style="width: 100%; height: 100%"></div></a> 
+                    </div>
+                  </div>
+                </div>
+                <a class="itcss__control itcss__control_prev" href="#" role="button" data-slide="prev"></a>
+                <a class="itcss__control itcss__control_next" href="#" role="button" data-slide="next"></a>
+              </div>
             <p>Некоторые животные красной книги</p>
             <div class="redbook__class">
                 <a href="details/sizovoronka.html"><div class="redbook__class__elem">
