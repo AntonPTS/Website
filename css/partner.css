@@ -369,4 +369,7 @@ textarea{
     .slc__flexs2{
         height: 25px;
     }
+    .form{
+        margin-right: 5px;
+    }
 }

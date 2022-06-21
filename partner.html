@@ -38,25 +38,25 @@
     <div class="redbook">
         <div class="container">
             <div class="redbook__class">
-                <form>
+                <form onsubmit="alert('Подтвердите через электронное письмо или сообщение!');return false">
                     <div class="form">
                         <h4>Форма для пожертвований</h4>
                     <table>
                         <tr>
                             <td><label for="no1">Фамилия</label></td>
-                            <td><input type="text" id="no1"></td>
+                            <td><input type="text" id="no1" required></td>
                         </tr>
                         <tr>
                             <td><label for="no2">Имя</label></td>
-                            <td><input type="text" id="no2"></td>
+                            <td><input type="text" id="no2" required></td>
                         </tr>
                         <tr>
                             <td><label for="no3">Отчество</label></td>
-                            <td><input type="text" id="no3"></td>
+                            <td><input type="text" id="no3" required></td>
                         </tr>
                         <tr>
                             <td><label for="no4">Дата рождения</label></td>
-                            <td><input type="date" id="no4"></td>
+                            <td><input type="date" id="no4" required></td>
                         </tr>
                         <tr>
                             <td><label for="no5">Пол</label></td>
@@ -69,26 +69,25 @@
                         </tr>
                         <tr>
                             <td><label for="no6">Телефон</label></td>
-                            <td><input type="tel" id="no6" value="+7" pattern="+7[0-9]{10}" maxlength="12"></td>
+                            <td><input type="tel" id="no6" value="+7" pattern="+7[0-9]{10}" maxlength="12" required></td>
                         </tr>
                         <tr>
                             <td><label for="no7">Почта</label></td>
-                            <td><input type="email" id="no7"></td>
+                            <td><input type="email" id="no7" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required></td>
                         </tr>
                         <tr>
                             <td><label for="no8">Город</label></td>
-                            <td><input type="text" id="no8"></td>
+                            <td><input type="text" id="no8" required></td>
                         </tr>
                         <tr>
                             <td><label for="no9">Адрес проживания</label></td>
-                            <td><textarea id="no9"></textarea></td>
+                            <td><textarea id="no9" required></textarea></td>
                         </tr>
                         <tr>
                             <td><label for="no10">Сумма пожертвования</label></td>
-                            <td><input type="number" id="no10" min="100" max="1000000" placeholder="От 100 до 1 000 000" class="place"></td>
+                            <td><input type="number" id="no10" min="100" max="1000000" placeholder="От 100 до 1 000 000" class="place" required></td>
                         </tr>
                     </table>
-                    
                     <input type="submit" class="submit">
                 </div>
                 </form>
